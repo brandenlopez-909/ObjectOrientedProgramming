@@ -1,0 +1,18 @@
+The Integer class wraps a value of the primitive type int in an object(instance).
+An object of type Integer contains a single field whose type is int. 
+
+The advantage of using the class Integer is that many methods are present to easily convert an integer to a 
+string or a string to an integer. Other than methods for stings, we can find information about the primative datatype
+int in the IntegerClass.
+
+Depite the Integer class having many useful methods since it is an instance, using the Integer class creates
+object references for the saved "Integer". 
+That is:
+	Integer X=5;
+	Integer Y=X;
+	Y = 0;
+Produces:
+	X=0
+This is because when Y=X, we copy the reference and when Y=0 we change the object which the that reference points at.
+
+Due to the integer class referencing heap memory, it is slower that the primative type int when being called. 
